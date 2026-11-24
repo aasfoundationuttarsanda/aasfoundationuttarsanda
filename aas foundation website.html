@@ -1,0 +1,1396 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AAS FOUNDATION UTTARSANDA | Empowering Change, Transforming Lives</title>
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Google Fonts: Inter & Noto Fonts for Gujarati and Devanagari -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Noto+Sans+Gujarati:wght@400;600;700&family=Noto+Sans+Devanagari:wght@400;600;700&display=swap" rel="stylesheet">
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+
+  <style>
+    body {
+      font-family: 'Inter', 'Noto Sans Gujarati', 'Noto Sans Devanagari', sans-serif;
+      scroll-behavior: smooth;
+    }
+  </style>
+</head>
+<body class="bg-slate-50 text-slate-800 antialiased selection:bg-orange-500 selection:text-white">
+
+  <!-- ==================== FIRST-VISIT LANGUAGE MODAL ==================== -->
+  <div id="languageModal" style="display: flex; position: fixed; inset: 0; z-index: 9999; align-items: center; justify-content: center; background-color: rgba(2, 6, 23, 0.85); backdrop-filter: blur(4px);">
+    <div class="bg-white rounded-2xl shadow-2xl p-6 sm:p-8 max-w-md w-full mx-4 border border-orange-100 text-center">
+      <div class="w-16 h-16 mx-auto mb-4 bg-orange-50 rounded-full flex items-center justify-center text-orange-600 text-2xl font-bold">
+        🌐
+      </div>
+      <h2 class="text-xl sm:text-2xl font-bold text-slate-900 mb-2">Welcome to AAS FOUNDATION UTTARSANDA</h2>
+      <p class="text-slate-600 text-xs sm:text-sm mb-6">Please select your preferred language / કૃપા કરીને ભાષા પસંદ કરો / कृपया भाषा चुनें</p>
+      
+      <div class="space-y-3">
+        <button type="button" onclick="document.getElementById('languageModal').style.display='none'; dismissAndSetLang('en');" class="w-full py-3 px-4 rounded-xl border border-slate-200 hover:border-orange-500 hover:bg-orange-50 font-semibold text-slate-800 flex items-center justify-between transition-all group">
+          <span>English</span>
+          <span class="text-xs text-slate-400 group-hover:text-orange-600">Continue &rarr;</span>
+        </button>
+        <button type="button" onclick="document.getElementById('languageModal').style.display='none'; dismissAndSetLang('gu');" class="w-full py-3 px-4 rounded-xl border border-slate-200 hover:border-orange-500 hover:bg-orange-50 font-semibold text-slate-800 flex items-center justify-between transition-all group">
+          <span>ગુજરાતી</span>
+          <span class="text-xs text-slate-400 group-hover:text-orange-600">આગળ વધો &rarr;</span>
+        </button>
+        <button type="button" onclick="document.getElementById('languageModal').style.display='none'; dismissAndSetLang('hi');" class="w-full py-3 px-4 rounded-xl border border-slate-200 hover:border-orange-500 hover:bg-orange-50 font-semibold text-slate-800 flex items-center justify-between transition-all group">
+          <span>हिन्दी</span>
+          <span class="text-xs text-slate-400 group-hover:text-orange-600">आगे बढ़ें &rarr;</span>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ==================== TOP NAVIGATION ==================== -->
+  <header class="sticky top-0 z-40 bg-white/95 backdrop-blur border-b border-slate-200 shadow-sm">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+      
+      <!-- Brand & Circular Logo -->
+      <a href="#home" class="flex items-center gap-3">
+        <div class="w-12 h-12 rounded-full border-2 border-orange-500 p-0.5 shadow-sm bg-white shrink-0 flex items-center justify-center">
+          <svg viewBox="0 0 100 100" class="w-full h-full">
+            <circle cx="50" cy="50" r="48" fill="#FFF9EB" stroke="#1E293B" stroke-width="2"/>
+            <circle cx="50" cy="34" r="34" fill="#FDE047"/>
+            <polygon points="50,14 55,24 45,24" fill="#F97316"/>
+            <polygon points="68,20 68,32 58,26" fill="#F97316"/>
+            <polygon points="32,20 42,26 32,32" fill="#F97316"/>
+            <polygon points="78,35 70,43 66,35" fill="#F97316"/>
+            <polygon points="22,35 34,35 30,43" fill="#F97316"/>
+            <path d="M22 45 C 28 65, 45 78, 50 78 C 42 70, 32 58, 28 50 Z" fill="#0EA5E9"/>
+            <path d="M78 45 C 72 65, 55 78, 50 78 C 58 70, 68 58, 72 50 Z" fill="#0EA5E9"/>
+            <circle cx="50" cy="46" r="3.5" fill="#475569"/>
+            <path d="M43 56 Q 50 51 57 56 L 50 66 Z" fill="#475569"/>
+            <circle cx="41" cy="51" r="2.5" fill="#475569"/>
+            <path d="M36 58 Q 41 55 46 58 L 41 64 Z" fill="#475569"/>
+            <circle cx="59" cy="51" r="2.5" fill="#475569"/>
+            <path d="M54 58 Q 59 55 64 58 L 59 64 Z" fill="#475569"/>
+          </svg>
+        </div>
+        <div class="text-left">
+          <span class="block text-base sm:text-xl font-extrabold tracking-tight text-slate-900 leading-none">AAS FOUNDATION UTTARSANDA</span>
+          <span class="text-[10px] tracking-wider uppercase text-orange-600 font-semibold">Empowering Change</span>
+        </div>
+      </a>
+
+      <!-- Desktop Nav Links -->
+      <nav class="hidden md:flex items-center gap-6 text-sm font-medium text-slate-700">
+        <a href="#home" class="hover:text-orange-600 transition-colors" data-i18n="nav_home">Home</a>
+        <a href="#about" class="hover:text-orange-600 transition-colors" data-i18n="nav_about">About</a>
+        <a href="#who-we-serve" class="hover:text-orange-600 transition-colors" data-i18n="nav_serve">Whom We Serve</a>
+        <a href="#what-we-do" class="hover:text-orange-600 transition-colors" data-i18n="nav_do">What We Do</a>
+        <a href="#impact" class="hover:text-orange-600 transition-colors" data-i18n="nav_impact">Impact</a>
+        <a href="#gallery" class="hover:text-orange-600 transition-colors" data-i18n="nav_gallery">Our Work</a>
+        <a href="#team" class="hover:text-orange-600 transition-colors" data-i18n="nav_team">Meet the Team</a>
+        <a href="#contact" class="hover:text-orange-600 transition-colors" data-i18n="nav_contact">Contact</a>
+      </nav>
+
+      <!-- Language Selector & Donate CTA -->
+      <div class="flex items-center gap-3">
+        <div class="relative">
+          <select id="langSelect" onchange="dismissAndSetLang(this.value)" class="text-xs bg-slate-100 hover:bg-slate-200 text-slate-800 font-semibold py-2 px-3 rounded-lg border border-slate-300 focus:outline-none focus:ring-2 focus:ring-orange-500 cursor-pointer">
+            <option value="en">English</option>
+            <option value="gu">ગુજરાતી</option>
+            <option value="hi">हिन्दी</option>
+          </select>
+        </div>
+
+        <a href="#donate" class="hidden sm:inline-flex items-center gap-1.5 bg-orange-600 hover:bg-orange-700 text-white text-sm font-semibold px-4 py-2 rounded-lg shadow transition">
+          <i data-lucide="heart" class="w-4 h-4 fill-current"></i>
+          <span data-i18n="nav_donate">Donate</span>
+        </a>
+
+        <!-- Mobile Menu Toggle Button -->
+        <button type="button" onclick="toggleMobileMenu()" class="md:hidden text-slate-700 p-2 focus:outline-none">
+          <i data-lucide="menu" class="w-6 h-6"></i>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile Drawer Menu -->
+    <div id="mobileMenu" class="hidden md:hidden bg-white border-b border-slate-200 px-6 py-4 space-y-3">
+      <a href="#home" onclick="toggleMobileMenu()" class="block py-2 text-slate-700 font-medium" data-i18n="nav_home">Home</a>
+      <a href="#about" onclick="toggleMobileMenu()" class="block py-2 text-slate-700 font-medium" data-i18n="nav_about">About</a>
+      <a href="#who-we-serve" onclick="toggleMobileMenu()" class="block py-2 text-slate-700 font-medium" data-i18n="nav_serve">Whom We Serve</a>
+      <a href="#what-we-do" onclick="toggleMobileMenu()" class="block py-2 text-slate-700 font-medium" data-i18n="nav_do">What We Do</a>
+      <a href="#impact" onclick="toggleMobileMenu()" class="block py-2 text-slate-700 font-medium" data-i18n="nav_impact">Impact</a>
+      <a href="#gallery" onclick="toggleMobileMenu()" class="block py-2 text-slate-700 font-medium" data-i18n="nav_gallery">Our Work</a>
+      <a href="#team" onclick="toggleMobileMenu()" class="block py-2 text-slate-700 font-medium" data-i18n="nav_team">Meet the Team</a>
+      <a href="#contact" onclick="toggleMobileMenu()" class="block py-2 text-slate-700 font-medium" data-i18n="nav_contact">Contact</a>
+      <a href="#donate" onclick="toggleMobileMenu()" class="block text-center py-2.5 bg-orange-600 text-white font-semibold rounded-lg" data-i18n="nav_donate">Donate</a>
+    </div>
+  </header>
+
+  <!-- ==================== HERO SECTION ==================== -->
+  <section id="home" class="relative bg-gradient-to-b from-orange-50/60 to-white py-16 sm:py-24 border-b border-slate-100">
+    <div class="max-w-5xl mx-auto px-4 text-center">
+      
+      <span class="inline-block py-1 px-3 mb-4 rounded-full bg-orange-100 text-orange-800 text-xs font-semibold tracking-wide uppercase" data-i18n="hero_badge">
+        Non-Governmental Social Development Organisation
+      </span>
+
+      <h1 class="text-3xl sm:text-5xl lg:text-6xl font-black text-slate-900 tracking-tight mb-4">
+        AAS FOUNDATION UTTARSANDA
+      </h1>
+
+      <p class="text-xl sm:text-2xl font-medium text-slate-600 max-w-2xl mx-auto mb-8" data-i18n="hero_welcome">
+        We Welcome You — Together Bringing Hope, Dignity, and Education to Every Child and Family.
+      </p>
+
+      <div class="flex flex-wrap items-center justify-center gap-4 mb-12">
+        <a href="#what-we-do" class="px-6 py-3 bg-slate-900 hover:bg-slate-800 text-white rounded-xl font-medium transition shadow-md" data-i18n="hero_cta_work">
+          Explore Our Work
+        </a>
+        <a href="#donate" class="px-6 py-3 bg-orange-600 hover:bg-orange-700 text-white rounded-xl font-semibold transition shadow-md flex items-center gap-2" data-i18n="hero_cta_donate">
+          <i data-lucide="heart" class="w-4 h-4 fill-current"></i> Support a Student
+        </a>
+      </div>
+
+      <!-- Main Photo Showcase -->
+      <div class="relative mx-auto rounded-3xl overflow-hidden shadow-2xl border-4 border-white aspect-video max-w-4xl bg-slate-200">
+        <img 
+          src="C:\aas Foundation pics\IMG-20261016-WA0022.jpg" 
+          alt="AAS Foundation students and volunteers celebrating together" 
+          class="w-full h-full object-cover"
+        />
+        <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent flex items-end p-6">
+          <p class="text-white text-sm sm:text-base font-medium" data-i18n="hero_photo_caption">
+            "Making education engaging, meaningful, and accessible for every child."
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== SECULAR MOTTO SECTION ==================== -->
+  <section class="bg-gradient-to-r from-orange-50 via-amber-50 to-orange-50 border-y border-orange-200/60 py-10">
+    <div class="max-w-4xl mx-auto px-4 text-center">
+      <div class="inline-flex items-center justify-center p-2 bg-orange-100 rounded-full text-orange-700 mb-3">
+        <i data-lucide="sparkles" class="w-5 h-5"></i>
+      </div>
+      <blockquote class="text-xl sm:text-2xl font-serif italic text-slate-800 leading-relaxed mb-3" data-i18n="motto_verse">
+        "Uplifting humanity through equal opportunities, compassion, and shared progress."
+      </blockquote>
+      <div class="text-xs font-semibold tracking-wider text-slate-500 uppercase" data-i18n="motto_ref">
+        Collective Empathy • Inclusive Growth • Social Harmony
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== ABOUT THE NGO ==================== -->
+  <section id="about" class="py-20 bg-white">
+    <div class="max-w-5xl mx-auto px-4 sm:px-6">
+      <div class="text-center mb-12">
+        <h2 class="text-xs font-bold uppercase tracking-widest text-orange-600 mb-2" data-i18n="about_tag">About Us</h2>
+        <h3 class="text-3xl font-extrabold text-slate-900" data-i18n="about_title">The Journey of AAS Foundation Uttarsanda</h3>
+      </div>
+
+      <!-- Journey Narrative -->
+      <div class="bg-slate-50 p-6 sm:p-8 rounded-3xl border border-slate-200 mb-12 shadow-sm">
+        <div class="space-y-4 text-slate-700 leading-relaxed text-base">
+          <p data-i18n="about_journey_p1">
+            For more than 15 years, our journey began as a quiet, close-knit initiative dedicated to providing monthly Ration Kits to widowed mothers and their families. Driven by a deep commitment to service, our Respected President envisioned creating an enduring institutional umbrella to amplify this vital work.
+          </p>
+          <p data-i18n="about_journey_p2">
+            On July 6, 2023, AAS Foundation was formally registered. What started as humble grassroots relief has blossomed, through the steady dedication of dear friends, family, and compassionate well-wishers, into a mighty, ever-expanding banyan tree—nurturing countless lives every single day.
+          </p>
+        </div>
+      </div>
+
+      <!-- Vision & Mission Grid -->
+      <div class="grid md:grid-cols-2 gap-8 mb-12">
+        <!-- Vision -->
+        <div class="bg-orange-50/40 rounded-3xl p-6 sm:p-8 border border-orange-200 flex flex-col justify-between">
+          <div>
+            <div class="inline-flex items-center gap-2 p-2 bg-orange-100 text-orange-700 rounded-xl mb-4 font-bold text-xs uppercase tracking-wider">
+              <i data-lucide="eye" class="w-4 h-4"></i>
+              <span data-i18n="about_vision_title">Our Vision</span>
+            </div>
+            <p class="text-sm text-slate-700 leading-relaxed" data-i18n="about_vision_desc">
+              To build an inclusive, equitable, and flourishing society where every individual enjoys equal opportunities for quality education, economic self-reliance, and dignity.
+            </p>
+          </div>
+        </div>
+
+        <!-- Mission -->
+        <div class="bg-sky-50/40 rounded-3xl p-6 sm:p-8 border border-sky-200 flex flex-col justify-between">
+          <div>
+            <div class="inline-flex items-center gap-2 p-2 bg-sky-100 text-sky-700 rounded-xl mb-4 font-bold text-xs uppercase tracking-wider">
+              <i data-lucide="compass" class="w-4 h-4"></i>
+              <span data-i18n="about_mission_title">Our Mission</span>
+            </div>
+            <p class="text-sm text-slate-700 leading-relaxed" data-i18n="about_mission_desc">
+              Through strategic interventions in progressive education, economic enablement, holistic health, sustainable environmental practices, and social equality, we foster an inclusive society with equitable opportunities for all members of the human family.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Core Values Showcase Card -->
+      <div class="bg-white rounded-3xl p-6 sm:p-8 border-2 border-slate-200 shadow-sm text-center">
+        <h4 class="font-bold text-xs uppercase tracking-widest text-slate-500 mb-6" data-i18n="core_values_tag">Our Guiding Pillars</h4>
+        <div class="grid grid-cols-2 sm:grid-cols-4 gap-4">
+          <div class="p-4 rounded-2xl bg-amber-50 border border-amber-100">
+            <i data-lucide="users-2" class="w-6 h-6 mx-auto text-amber-700 mb-2"></i>
+            <h5 class="font-bold text-slate-900 text-sm" data-i18n="val_1_title">Collaboration</h5>
+            <p class="text-[11px] text-slate-500 mt-1" data-i18n="val_1_sub">Partnering for collective strength</p>
+          </div>
+          <div class="p-4 rounded-2xl bg-emerald-50 border border-emerald-100">
+            <i data-lucide="shield-check" class="w-6 h-6 mx-auto text-emerald-700 mb-2"></i>
+            <h5 class="font-bold text-slate-900 text-sm" data-i18n="val_2_title">Integrity</h5>
+            <p class="text-[11px] text-slate-500 mt-1" data-i18n="val_2_sub">Accountable & transparent service</p>
+          </div>
+          <div class="p-4 rounded-2xl bg-sky-50 border border-sky-100">
+            <i data-lucide="sparkles" class="w-6 h-6 mx-auto text-sky-700 mb-2"></i>
+            <h5 class="font-bold text-slate-900 text-sm" data-i18n="val_3_title">Empowerment</h5>
+            <p class="text-[11px] text-slate-500 mt-1" data-i18n="val_3_sub">Fostering lifelong self-reliance</p>
+          </div>
+          <div class="p-4 rounded-2xl bg-purple-50 border border-purple-100">
+            <i data-lucide="scale" class="w-6 h-6 mx-auto text-purple-700 mb-2"></i>
+            <h5 class="font-bold text-slate-900 text-sm" data-i18n="val_4_title">Social Justice</h5>
+            <p class="text-[11px] text-slate-500 mt-1" data-i18n="val_4_sub">Equal dignity and access for all</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ==================== WHO WE SERVE ==================== -->
+  <section id="who-we-serve" class="py-20 bg-slate-50 border-t border-slate-200">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6">
+      <div class="text-center mb-14">
+        <h2 class="text-xs font-bold uppercase tracking-widest text-orange-600 mb-2" data-i18n="serve_tag">Beneficiaries</h2>
+        <h3 class="text-3xl font-extrabold text-slate-900" data-i18n="serve_title">Whom We Serve</h3>
+        <p class="text-slate-600 max-w-xl mx-auto mt-2 text-sm" data-i18n="serve_sub">Focusing where genuine care and direct resources make an immediate, life-changing difference.</p>
+      </div>
+
+      <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div class="bg-white p-6 rounded-2xl shadow-sm border border-slate-200 flex flex-col justify-between">
+          <div>
+            <div class="w-12 h-12 bg-blue-50 text-blue-600 rounded-xl flex items-center justify-center mb-4">
+              <i data-lucide="baby" class="w-6 h-6"></i>
+            </div>
+            <h4 class="font-bold text-slate-900 mb-2" data-i18n="serve_c1_title">Financially Weaker But Cleaver Children</h4>
+            <p class="text-sm text-slate-600 leading-relaxed" data-i18n="serve_c1_desc">
+              Clever children whose parents struggle to afford basic tuition fees, uniforms, and books, giving them equal footing in modern schooling.
+            </p>
+          </div>
+        </div>
+
+        <div class="bg-white p-6 rounded-2xl shadow-sm border border-slate-200 flex flex-col justify-between">
+          <div>
+            <div class="w-12 h-12 bg-amber-50 text-amber-600 rounded-xl flex items-center justify-center mb-4">
+              <i data-lucide="sparkles" class="w-6 h-6"></i>
+            </div>
+            <h4 class="font-bold text-slate-900 mb-2" data-i18n="serve_c2_title">Students Needing Academic Guidance</h4>
+            <p class="text-sm text-slate-600 leading-relaxed" data-i18n="serve_c2_desc">
+              Empowering children through dedicated remedial learning support to improve understanding and achieve strong academic marks.
+            </p>
+          </div>
+        </div>
+
+        <div class="bg-white p-6 rounded-2xl shadow-sm border border-slate-200 flex flex-col justify-between">
+          <div>
+            <div class="w-12 h-12 bg-emerald-50 text-emerald-600 rounded-xl flex items-center justify-center mb-4">
+              <i data-lucide="graduation-cap" class="w-6 h-6"></i>
+            </div>
+            <h4 class="font-bold text-slate-900 mb-2" data-i18n="serve_c3_title">Higher Education Aspirants</h4>
+            <p class="text-sm text-slate-600 leading-relaxed" data-i18n="serve_c3_desc">
+              Clever, academically capable students whose ambitions for college, degree courses, or diplomas are restricted purely by financial constraints.
+            </p>
+          </div>
+        </div>
+
+        <div class="bg-white p-6 rounded-2xl shadow-sm border border-slate-200 flex flex-col justify-between">
+          <div>
+            <div class="w-12 h-12 bg-rose-50 text-rose-600 rounded-xl flex items-center justify-center mb-4">
+              <i data-lucide="heart-handshake" class="w-6 h-6"></i>
+            </div>
+            <h4 class="font-bold text-slate-900 mb-2" data-i18n="serve_c4_title">Widows &amp; Their Children</h4>
+            <p class="text-sm text-slate-600 leading-relaxed" data-i18n="serve_c4_desc">
+              Supplying vital grocery and nutrition Ration Kits to widowed mothers whose children are minor dependents or actively studying.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== WHAT WE DO ==================== -->
+  <section id="what-we-do" class="py-20 bg-white">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6">
+      <div class="text-center mb-14">
+        <h2 class="text-xs font-bold uppercase tracking-widest text-orange-600 mb-2" data-i18n="do_tag">Core Initiatives</h2>
+        <h3 class="text-3xl font-extrabold text-slate-900" data-i18n="do_title">What We Do</h3>
+      </div>
+
+      <div class="grid md:grid-cols-2 gap-8">
+        <!-- Education Program -->
+        <div class="border border-slate-200 rounded-3xl p-8 bg-gradient-to-br from-white to-slate-50/50 shadow-sm flex flex-col justify-between">
+          <div>
+            <div class="inline-flex items-center gap-2 bg-orange-100 text-orange-800 text-xs font-bold uppercase px-3 py-1 rounded-full mb-6">
+              <i data-lucide="book-open" class="w-3.5 h-3.5"></i>
+              <span data-i18n="do_badge_edu">Educational Empowerment</span>
+            </div>
+            <h4 class="text-2xl font-bold text-slate-900 mb-4" data-i18n="do_edu_h">Making Learning Engaging, Fun &amp; Accessible</h4>
+            <ul class="space-y-3 text-slate-600 text-sm">
+              <li class="flex items-start gap-2.5">
+                <i data-lucide="check-circle-2" class="w-5 h-5 text-emerald-500 shrink-0 mt-0.5"></i>
+                <span data-i18n="do_edu_li1">Direct sponsorship of school admission and examination fees.</span>
+              </li>
+              <li class="flex items-start gap-2.5">
+                <i data-lucide="check-circle-2" class="w-5 h-5 text-emerald-500 shrink-0 mt-0.5"></i>
+                <span data-i18n="do_edu_li2">Remedial learning support producing noticeable marksheet improvements.</span>
+              </li>
+              <li class="flex items-start gap-2.5">
+                <i data-lucide="check-circle-2" class="w-5 h-5 text-emerald-500 shrink-0 mt-0.5"></i>
+                <span data-i18n="do_edu_li3">Merit scholarships for professional higher education studies.</span>
+              </li>
+              <li class="flex items-start gap-2.5">
+                <i data-lucide="check-circle-2" class="w-5 h-5 text-emerald-500 shrink-0 mt-0.5"></i>
+                <span data-i18n="do_edu_li4">Activity-based workshops to teach science and arts with joy.</span>
+              </li>
+            </ul>
+          </div>
+          <div class="mt-8 pt-6 border-t border-slate-200 text-xs text-slate-500 italic" data-i18n="do_edu_footer">
+            "Change education in a fun way and change society."
+          </div>
+        </div>
+
+        <!-- Family Support Program -->
+        <div class="border border-slate-200 rounded-3xl p-8 bg-gradient-to-br from-white to-slate-50/50 shadow-sm flex flex-col justify-between">
+          <div>
+            <div class="inline-flex items-center gap-2 bg-emerald-100 text-emerald-800 text-xs font-bold uppercase px-3 py-1 rounded-full mb-6">
+              <i data-lucide="package" class="w-3.5 h-3.5"></i>
+              <span data-i18n="do_badge_fam">Family &amp; Nutrition Support</span>
+            </div>
+            <h4 class="text-2xl font-bold text-slate-900 mb-4" data-i18n="do_fam_h">Monthly Grocery &amp; Ration Kits</h4>
+            <div class="p-3 bg-amber-50 rounded-xl border border-amber-200 mb-4 text-xs font-semibold text-amber-900" data-i18n="do_kit_items">
+              Kit Ingredients: Mug, Chana Dal, Toor Dal, Sugar, Chilli Powder, Turmeric Powder, and Pouch of Oil.
+            </div>
+            <ul class="space-y-3 text-slate-600 text-sm">
+              <li class="flex items-start gap-2.5">
+                <i data-lucide="check-circle-2" class="w-5 h-5 text-emerald-500 shrink-0 mt-0.5"></i>
+                <span data-i18n="do_fam_li1">Essential staple food kit supporting kitchen nutrition directly.</span>
+              </li>
+              <li class="flex items-start gap-2.5">
+                <i data-lucide="check-circle-2" class="w-5 h-5 text-emerald-500 shrink-0 mt-0.5"></i>
+                <span data-i18n="do_fam_li2">Prioritized for single mothers and widows with minor or schooling children.</span>
+              </li>
+              <li class="flex items-start gap-2.5">
+                <i data-lucide="check-circle-2" class="w-5 h-5 text-emerald-500 shrink-0 mt-0.5"></i>
+                <span data-i18n="do_fam_li3">Regular doorstep delivery to safeguard family dignity.</span>
+              </li>
+              <li class="flex items-start gap-2.5">
+                <i data-lucide="check-circle-2" class="w-5 h-5 text-emerald-500 shrink-0 mt-0.5"></i>
+                <span data-i18n="do_fam_li4">Relieving kitchen distress so children can focus fully on studies.</span>
+              </li>
+            </ul>
+          </div>
+          <div class="mt-8 pt-6 border-t border-slate-200 text-xs text-slate-500 italic" data-i18n="do_fam_footer">
+            Verified monthly distribution records maintained with zero leakage.
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== IMPACT & VERIFIABLE PROOF ==================== -->
+  <section id="impact" class="py-20 bg-slate-900 text-white">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6">
+      <div class="text-center mb-16">
+        <h2 class="text-xs font-bold uppercase tracking-widest text-orange-400 mb-2" data-i18n="impact_tag">Verified Records</h2>
+        <h3 class="text-3xl sm:text-4xl font-extrabold text-white" data-i18n="impact_title">Our Impact &amp; Proof of Work</h3>
+        <p class="text-slate-400 max-w-xl mx-auto mt-3 text-sm" data-i18n="impact_sub">
+          We maintain absolute transparency. Every single rupee and program is backed by ground documentation.
+        </p>
+      </div>
+
+      <!-- Stats Grid -->
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-16 text-center max-w-4xl mx-auto">
+        <div class="p-6 rounded-2xl bg-slate-800/80 border border-slate-700">
+          <div class="text-4xl font-black text-orange-500 mb-1">58</div>
+          <div class="text-sm text-slate-300 font-medium" data-i18n="stat_1">Students Sponsored</div>
+        </div>
+        <div class="p-6 rounded-2xl bg-slate-800/80 border border-slate-700">
+          <div class="text-4xl font-black text-orange-500 mb-1">15</div>
+          <div class="text-sm text-slate-300 font-medium" data-i18n="stat_2">Widow Kits Distributing Successfully Every Month</div>
+        </div>
+        <div class="p-6 rounded-2xl bg-slate-800/80 border border-slate-700">
+          <div class="text-4xl font-black text-orange-500 mb-1">123</div>
+          <div class="text-sm text-slate-300 font-medium" data-i18n="stat_3">Remedial Learners Mentored</div>
+        </div>
+      </div>
+
+      <!-- Ground Proof Verification Cards -->
+      <h4 class="text-lg font-bold text-center mb-8 text-slate-200" data-i18n="impact_proof_h">Ground Verification &amp; Documentation</h4>
+      <div class="grid md:grid-cols-3 gap-6">
+        
+        <div class="bg-slate-800 p-6 rounded-2xl border border-slate-700 hover:border-slate-600 transition">
+          <div class="flex items-center gap-3 mb-4 text-orange-400">
+            <i data-lucide="file-check" class="w-6 h-6"></i>
+            <h5 class="font-bold text-white text-base" data-i18n="proof_1_t">Direct School Fee Receipts</h5>
+          </div>
+          <p class="text-xs text-slate-300 leading-relaxed mb-4" data-i18n="proof_1_d">
+            Tuition vouchers are paid directly to verified institutions via cheque or bank transfers with official school stamps.
+          </p>
+          <span class="inline-flex items-center text-xs text-orange-400 font-semibold gap-1">
+            <i data-lucide="check" class="w-3.5 h-3.5"></i> <span data-i18n="proof_verified">Audited Logbooks</span>
+          </span>
+        </div>
+
+        <div class="bg-slate-800 p-6 rounded-2xl border border-slate-700 hover:border-slate-600 transition">
+          <div class="flex items-center gap-3 mb-4 text-orange-400">
+            <i data-lucide="clipboard-list" class="w-6 h-6"></i>
+            <h5 class="font-bold text-white text-base" data-i18n="proof_2_t">Ration Acknowledgment Slips</h5>
+          </div>
+          <p class="text-xs text-slate-300 leading-relaxed mb-4" data-i18n="proof_2_d">
+            Every grocery kit is logged with distribution signatures and photo proofs alongside date &amp; area stamps.
+          </p>
+          <span class="inline-flex items-center text-xs text-orange-400 font-semibold gap-1">
+            <i data-lucide="check" class="w-3.5 h-3.5"></i> <span data-i18n="proof_verified">Audited Logbooks</span>
+          </span>
+        </div>
+
+        <div class="bg-slate-800 p-6 rounded-2xl border border-slate-700 hover:border-slate-600 transition">
+          <div class="flex items-center gap-3 mb-4 text-orange-400">
+            <i data-lucide="award" class="w-6 h-6"></i>
+            <h5 class="font-bold text-white text-base" data-i18n="proof_3_t">Academic Progress Cards</h5>
+          </div>
+          <p class="text-xs text-slate-300 leading-relaxed mb-4" data-i18n="proof_3_d">
+            We track semester progress report cards to document noticeable grade growth and ensure academic excellence.
+          </p>
+          <span class="inline-flex items-center text-xs text-orange-400 font-semibold gap-1">
+            <i data-lucide="check" class="w-3.5 h-3.5"></i> <span data-i18n="proof_verified">Audited Logbooks</span>
+          </span>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== GALLERY / OUR WORK ==================== -->
+  <section id="gallery" class="py-20 bg-slate-50">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6">
+      <div class="text-center mb-14">
+        <h2 class="text-xs font-bold uppercase tracking-widest text-orange-600 mb-2" data-i18n="gal_tag">Field Activities</h2>
+        <h3 class="text-3xl font-extrabold text-slate-900" data-i18n="gal_title">Our Work &amp; Project Reports</h3>
+        <p class="text-slate-600 max-w-xl mx-auto mt-2 text-sm" data-i18n="gal_sub">Explore individual project reports with on-ground details, dates, and photographic proof.</p>
+      </div>
+
+      <div class="grid md:grid-cols-3 gap-8">
+        
+        <!-- Project 1: EK AAS KAL KI AUR -->
+        <div class="bg-white rounded-2xl border-2 border-orange-200 overflow-hidden shadow-sm hover:shadow-md transition">
+          <div class="h-48 overflow-hidden bg-slate-100">
+            <img src="C:\aas Foundation pics\IMG-20261015-WA0168.jpg" alt="AAS Foundation Scholarship Distribution Banner" class="w-full h-full object-cover hover:scale-105 transition duration-300">
+          </div>
+          <div class="p-6">
+            <div class="flex items-center justify-between text-xs text-slate-500 mb-3">
+              <span class="flex items-center gap-1 font-medium"><i data-lucide="calendar" class="w-3.5 h-3.5"></i> Annual Initiative</span>
+              <span class="flex items-center gap-1 font-medium text-orange-700 font-semibold"><i data-lucide="map-pin" class="w-3.5 h-3.5"></i> Community Hall</span>
+            </div>
+            <h4 class="font-bold text-slate-900 text-lg mb-2" data-i18n="proj_1_t">EK AAS KAL KI AUR</h4>
+            <p class="text-xs text-slate-600 leading-relaxed mb-4" data-i18n="proj_1_d">
+              Our flagship scholarship distribution initiative held at the Community Hall providing direct educational sponsorship, uniforms, and textbooks to capable students.
+            </p>
+            <button type="button" onclick="openModal('EK AAS KAL KI AUR — Scholarship Distribution', 'Annual Initiative', 'Community Hall', 'Comprehensive scholarship distribution program honoring capable students, providing financial aid, educational kits, and mentorship for higher studies.', ekAasImages)" class="text-xs font-bold text-orange-600 hover:text-orange-700 flex items-center gap-1">
+              <span data-i18n="view_project">View Project Details &amp; Gallery</span> &rarr;
+            </button>
+          </div>
+        </div>
+
+        <!-- Project 2: Ration Kit Distribution -->
+        <div class="bg-white rounded-2xl border-2 border-orange-200 overflow-hidden shadow-sm hover:shadow-md transition">
+          <div class="h-48 overflow-hidden bg-slate-100">
+            <img src="C:\aas Foundation pics\IMG-20261014-WA0006.jpg" alt="Widow Kit Distribution Poster" class="w-full h-full object-cover hover:scale-105 transition duration-300">
+          </div>
+          <div class="p-6">
+            <div class="flex items-center justify-between text-xs text-slate-500 mb-3">
+              <span class="flex items-center gap-1 font-medium"><i data-lucide="calendar" class="w-3.5 h-3.5"></i> Monthly Ongoing</span>
+              <span class="flex items-center gap-1 font-medium"><i data-lucide="map-pin" class="w-3.5 h-3.5"></i> Community Centers</span>
+            </div>
+            <h4 class="font-bold text-slate-900 text-lg mb-2" data-i18n="proj_2_t">Ration Kit Distribution</h4>
+            <p class="text-xs text-slate-600 leading-relaxed mb-4" data-i18n="proj_2_d">
+              Monthly dry ration kit dispatch containing mug, chana dal, toor dal, sugar, chilli powder, turmeric powder, and oil pouch for widowed mothers.
+            </p>
+            <button type="button" onclick="openModal('Ration Kit Distribution', 'Monthly Ongoing', 'Community Centers', 'Supplying essentials: mug, chana dal, toor dal, sugar, chilli powder, turmeric powder, and oil pouches to verified families. Zero leakage with verified signatures and doorstep distributions.', rationKitImages)" class="text-xs font-bold text-orange-600 hover:text-orange-700 flex items-center gap-1">
+              <span data-i18n="view_project">View Project Details &amp; Gallery</span> &rarr;
+            </button>
+          </div>
+        </div>
+
+        <!-- Project 3: Remedial Education Programme -->
+        <div class="bg-white rounded-2xl border-2 border-orange-200 overflow-hidden shadow-sm hover:shadow-md transition">
+          <div class="h-48 overflow-hidden bg-slate-100">
+            <img src="C:\aas Foundation pics\IMG-20261014-WA0007.jpg" alt="AAS Foundation Remedial Education Banner" class="w-full h-full object-cover hover:scale-105 transition duration-300">
+          </div>
+          <div class="p-6">
+            <div class="flex items-center justify-between text-xs text-slate-500 mb-3">
+              <span class="flex items-center gap-1 font-medium"><i data-lucide="calendar" class="w-3.5 h-3.5"></i> Active Academic Term</span>
+              <span class="flex items-center gap-1 font-medium text-orange-700 font-semibold"><i data-lucide="map-pin" class="w-3.5 h-3.5"></i> Near Chaklasi Area</span>
+            </div>
+            <h4 class="font-bold text-slate-900 text-lg mb-2" data-i18n="proj_3_t">Remedial Education Programme</h4>
+            <p class="text-xs text-slate-600 leading-relaxed mb-4" data-i18n="proj_3_d">
+              Structured coaching conducted near Chaklasi Area that has produced noticeable, documented growth in children's marksheets.
+            </p>
+            <button type="button" onclick="openModal('Remedial Education Programme', 'Active Academic Term', 'Near Chaklasi Area', 'Specialized remedial mentoring and interactive classroom sessions designed to strengthen basic concepts, provide focused learning, and produce documented marksheet improvements.', remedialImages)" class="text-xs font-bold text-orange-600 hover:text-orange-700 flex items-center gap-1">
+              <span data-i18n="view_project">View Project Details &amp; Gallery</span> &rarr;
+            </button>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== MEET THE TEAM ==================== -->
+  <section id="team" class="py-20 bg-white">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6">
+      <div class="text-center mb-14">
+        <h2 class="text-xs font-bold uppercase tracking-widest text-orange-600 mb-2" data-i18n="team_tag">Leadership</h2>
+        <h3 class="text-3xl font-extrabold text-slate-900" data-i18n="team_title">Meet the Team</h3>
+        <p class="text-slate-600 max-w-xl mx-auto mt-2 text-sm" data-i18n="team_sub">The dedicated individuals committed to integrity, transparency, and direct community service.</p>
+      </div>
+
+      <div class="grid sm:grid-cols-2 gap-8">
+        
+        <!-- Team Member 1: Founder & President -->
+        <div class="bg-slate-50 rounded-2xl p-6 sm:p-8 border border-slate-200 text-center flex flex-col justify-between">
+          <div>
+            <div class="w-24 h-24 rounded-full mx-auto mb-4 overflow-hidden border-2 border-orange-500 shadow-sm">
+              <img src="C:\aas Foundation pics\IMG-20261015-WA0178.jpg" alt="Rajnikant Macwan" class="w-full h-full object-cover">
+            </div>
+            <p class="text-xs text-orange-600 font-semibold mb-1 uppercase tracking-wider" data-i18n="team_m1_role">Founder &amp; President</p>
+            <h4 class="font-bold text-slate-900 text-xl mb-3">Rajnikant Mecwan</h4>
+            <p class="text-xs text-slate-600 leading-relaxed mb-6" data-i18n="team_m1_bio">
+              Guiding visionary who laid the foundation for 15+ years of widow support and steered the establishment of AAS Foundation into an institutional reality.
+            </p>
+          </div>
+          <div>
+            <a href="#contact" class="inline-block text-xs font-medium bg-white px-4 py-2 rounded-lg border border-slate-300 hover:border-orange-500 transition text-slate-700" data-i18n="team_contact">Get in Touch</a>
+          </div>
+        </div>
+
+        <!-- Team Member 2: Programme Director -->
+        <div class="bg-slate-50 rounded-2xl p-6 sm:p-8 border border-slate-200 text-center flex flex-col justify-between">
+          <div>
+            <div class="w-24 h-24 rounded-full mx-auto mb-4 overflow-hidden border-2 border-orange-500 shadow-sm">
+              <img src="C:\aas Foundation pics\IMG-20261015-WA0177.jpg" alt="Arsh Christian" class="w-full h-full object-cover">
+            </div>
+            <p class="text-xs text-orange-600 font-semibold mb-1 uppercase tracking-wider" data-i18n="team_m2_role">Programme Director</p>
+            <h4 class="font-bold text-slate-900 text-xl mb-3">Ashutosh Cyril Joseph</h4>
+            <p class="text-xs text-slate-600 leading-relaxed mb-6" data-i18n="team_m2_bio">
+              Leading on-ground educational programs, managing remedial classes, overseeing scholarship distributions, and driving community impact.
+            </p>
+          </div>
+          <div>
+            <a href="#contact" class="inline-block text-xs font-medium bg-white px-4 py-2 rounded-lg border border-slate-300 hover:border-orange-500 transition text-slate-700" data-i18n="team_contact">Get in Touch</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== DONATE SECTION ==================== -->
+  <section id="donate" class="py-20 bg-orange-50/50 border-y border-orange-200/60">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6">
+      <div class="text-center mb-12">
+        <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-orange-100 text-orange-800 text-xs font-semibold mb-3">
+          <i data-lucide="shield-check" class="w-3.5 h-3.5 text-orange-600"></i> Direct &amp; Transparent
+        </span>
+        <h3 class="text-3xl sm:text-4xl font-extrabold text-slate-900" data-i18n="donate_title">Support Our Cause</h3>
+        <p class="text-slate-600 max-w-xl mx-auto mt-2 text-sm" data-i18n="donate_sub">Your contribution fuels school enrollments, books, and vital monthly groceries for families in need.</p>
+      </div>
+
+      <div class="bg-white p-6 sm:p-10 rounded-3xl shadow-sm border border-orange-200 grid md:grid-cols-2 gap-8 items-center">
+        <!-- Bank Information -->
+        <div>
+          <h4 class="font-bold text-slate-900 text-lg mb-4 flex items-center gap-2">
+            <i data-lucide="building" class="w-5 h-5 text-orange-600"></i>
+            <span data-i18n="bank_info_h">Official Bank Account</span>
+          </h4>
+          
+          <div class="space-y-3 text-sm text-slate-700 bg-slate-50 p-5 rounded-2xl border border-slate-200">
+            <div class="flex justify-between pb-2 border-b border-slate-200">
+              <span class="text-slate-500" data-i18n="b_name">Bank Name:</span>
+              <strong class="font-semibold text-slate-900">State Bank of India</strong>
+            </div>
+            <div class="flex justify-between pb-2 border-b border-slate-200">
+              <span class="text-slate-500" data-i18n="b_acc_name">Account Name:</span>
+              <strong class="font-semibold text-slate-900">AAS FOUNDATION</strong>[cite: 2]
+            </div>
+            <div class="flex justify-between pb-2 border-b border-slate-200">
+              <span class="text-slate-500" data-i18n="b_branch">Branch:</span>
+              <strong class="font-semibold text-slate-900">Uttarsanda Branch</strong>
+            </div>
+            <div class="flex justify-between pb-2 border-b border-slate-200">
+              <span class="text-slate-500" data-i18n="b_acc_no">Account Number:</span>
+              <span class="font-mono font-bold text-orange-700 select-all">000042177799213</span>
+            </div>
+            <div class="flex justify-between">
+              <span class="text-slate-500" data-i18n="b_ifsc">IFSC Code:</span>
+              <span class="font-mono font-bold text-slate-900 select-all">SBIN0060440</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Direct Rendered High-Definition UPI QR Code -->
+        <div class="text-center flex flex-col items-center justify-center">
+          <h5 class="text-xs font-bold uppercase tracking-wider text-slate-500 mb-3" data-i18n="qr_title">Scan UPI to Donate Directly</h5>
+          <div class="w-48 h-48 rounded-2xl border-2 border-orange-400 p-2 bg-white shadow-md flex items-center justify-center">
+            <img 
+              src="https://api.qrserver.com/v1/create-qr-code/?size=250x250&data=upi%3A%2F%2Fpay%3Fpa%3D9039584421%40sbi%26pn%3DAAS%20FOUNDATION%26cu%3DINR" 
+              alt="AAS Foundation Donation UPI QR Code" 
+              class="w-full h-full object-contain"
+            />
+          </div>
+          <p class="text-xs font-mono font-bold text-slate-900 mt-3 select-all">UPI ID: 9039584421@sbi</p>[cite: 2]
+          <p class="text-[11px] text-slate-500 mt-0.5">Scan with Google Pay, PhonePe, Paytm, or BHIM</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== CONTACT ==================== -->
+  <section id="contact" class="py-20 bg-white">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6">
+      <div class="text-center mb-14">
+        <h2 class="text-xs font-bold uppercase tracking-widest text-orange-600 mb-2" data-i18n="con_tag">Reach Out</h2>
+        <h3 class="text-3xl font-extrabold text-slate-900" data-i18n="con_title">Contact Us</h3>
+        <p class="text-slate-600 max-w-xl mx-auto mt-2 text-sm" data-i18n="con_sub">Have a student to refer, wish to partner, or want to verify an initiative? We are here to talk.</p>
+      </div>
+
+      <div class="grid md:grid-cols-3 gap-8">
+        
+        <!-- Contact Options -->
+        <div class="space-y-4">
+          <!-- WhatsApp & Phone -->
+          <a href="https://wa.me/919039584421" target="_blank" class="flex items-center gap-4 p-4 rounded-xl border border-slate-200 hover:border-emerald-500 hover:bg-emerald-50/40 transition group">
+            <div class="w-11 h-11 bg-emerald-100 text-emerald-600 rounded-lg flex items-center justify-center shrink-0 group-hover:scale-110 transition">
+              <i data-lucide="message-circle" class="w-5 h-5"></i>
+            </div>
+            <div>
+              <div class="text-xs text-slate-500 font-medium">WhatsApp Us</div>
+              <div class="text-sm font-bold text-slate-900">+91 90395 84421</div>
+            </div>
+          </a>
+
+          <!-- Call -->
+          <a href="tel:+919039584421" class="flex items-center gap-4 p-4 rounded-xl border border-slate-200 hover:border-blue-500 hover:bg-blue-50/40 transition group">
+            <div class="w-11 h-11 bg-blue-100 text-blue-600 rounded-lg flex items-center justify-center shrink-0 group-hover:scale-110 transition">
+              <i data-lucide="phone-call" class="w-5 h-5"></i>
+            </div>
+            <div>
+              <div class="text-xs text-slate-500 font-medium">Direct Call</div>
+              <div class="text-sm font-bold text-slate-900">+91 90395 84421</div>
+            </div>
+          </a>
+
+          <!-- Email -->
+          <a href="mailto:aasfoundation672023@gmail.com" class="flex items-center gap-4 p-4 rounded-xl border border-slate-200 hover:border-orange-500 hover:bg-orange-50/40 transition group">
+            <div class="w-11 h-11 bg-orange-100 text-orange-600 rounded-lg flex items-center justify-center shrink-0 group-hover:scale-110 transition">
+              <i data-lucide="mail" class="w-5 h-5"></i>
+            </div>
+            <div>
+              <div class="text-xs text-slate-500 font-medium">Official Email</div>
+              <div class="text-xs font-bold text-slate-900 break-all">aasfoundation672023@gmail.com</div>
+            </div>
+          </a>
+
+          <!-- Address -->
+          <div class="flex items-start gap-4 p-4 rounded-xl border border-slate-200 bg-slate-50/50">
+            <div class="w-11 h-11 bg-amber-100 text-amber-700 rounded-lg flex items-center justify-center shrink-0 mt-0.5">
+              <i data-lucide="map-pin" class="w-5 h-5"></i>
+            </div>
+            <div>
+              <div class="text-xs text-slate-500 font-medium">Registered Address</div>
+              <div class="text-xs font-bold text-slate-800 leading-snug">
+                Christian Street, Limda Chowk, Uttarsanda, Nadiad, Kheda, 387370
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Contact Form (Direct to WhatsApp) -->
+        <div class="md:col-span-2 bg-slate-50 p-6 sm:p-8 rounded-2xl border border-slate-200">
+          <form onsubmit="handleContactSubmit(event)" class="space-y-4">
+            <div class="grid sm:grid-cols-2 gap-4">
+              <div>
+                <label class="block text-xs font-semibold text-slate-700 mb-1">Your Name</label>
+                <input type="text" id="contactName" required placeholder="Full Name" class="w-full text-sm px-3.5 py-2.5 rounded-lg border border-slate-300 focus:outline-none focus:ring-2 focus:ring-orange-500 bg-white">
+              </div>
+              <div>
+                <label class="block text-xs font-semibold text-slate-700 mb-1">Contact Number</label>
+                <input type="tel" id="contactPhone" required placeholder="+91 ..." class="w-full text-sm px-3.5 py-2.5 rounded-lg border border-slate-300 focus:outline-none focus:ring-2 focus:ring-orange-500 bg-white">
+              </div>
+            </div>
+            <div>
+              <label class="block text-xs font-semibold text-slate-700 mb-1">Message / Inquiry</label>
+              <textarea id="contactMessage" rows="4" required placeholder="Write your message here..." class="w-full text-sm px-3.5 py-2.5 rounded-lg border border-slate-300 focus:outline-none focus:ring-2 focus:ring-orange-500 bg-white"></textarea>
+            </div>
+            <button type="submit" class="px-6 py-2.5 bg-emerald-600 hover:bg-emerald-700 text-white font-semibold rounded-lg text-sm transition flex items-center gap-2 shadow">
+              <i data-lucide="message-circle" class="w-4 h-4"></i>
+              <span>Send Message via WhatsApp</span>
+            </button>
+          </form>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== FOOTER ==================== -->
+  <footer class="bg-slate-950 text-slate-400 py-14 border-t border-slate-800 text-sm">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6">
+      <div class="grid sm:grid-cols-2 md:grid-cols-4 gap-8 mb-12">
+        
+        <div class="space-y-3">
+          <div class="flex items-center gap-2">
+            <div class="w-8 h-8 rounded-full bg-orange-600 flex items-center justify-center text-white font-black text-sm">A</div>
+            <span class="text-white font-extrabold text-sm tracking-tight">AAS FOUNDATION UTTARSANDA</span>
+          </div>
+          <p class="text-xs text-slate-400 leading-relaxed">
+            Education. Opportunity. Compassion.
+          </p>
+          <div class="text-[11px] text-slate-500 leading-snug">
+            Christian Street, Limda Chowk, Uttarsanda, Nadiad, Kheda, 387370
+          </div>
+        </div>
+
+        <div>
+          <h5 class="text-white font-semibold text-xs uppercase tracking-wider mb-3">Quick Navigation</h5>
+          <ul class="space-y-2 text-xs">
+            <li><a href="#about" class="hover:text-white transition">About the NGO</a></li>
+            <li><a href="#who-we-serve" class="hover:text-white transition">Whom We Serve</a></li>
+            <li><a href="#what-we-do" class="hover:text-white transition">What We Do</a></li>
+            <li><a href="#impact" class="hover:text-white transition">Impact &amp; Proof</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h5 class="text-white font-semibold text-xs uppercase tracking-wider mb-3">Direct Links</h5>
+          <ul class="space-y-2 text-xs">
+            <li><a href="#gallery" class="hover:text-white transition">Our Work &amp; Gallery</a></li>
+            <li><a href="#team" class="hover:text-white transition">Meet the Team</a></li>
+            <li><a href="#donate" class="hover:text-white transition">Donate</a></li>
+            <li><a href="#contact" class="hover:text-white transition">Contact Us</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h5 class="text-white font-semibold text-xs uppercase tracking-wider mb-3">Languages</h5>
+          <div class="flex gap-2">
+            <button type="button" onclick="dismissAndSetLang('en')" class="px-2.5 py-1 bg-slate-800 hover:bg-slate-700 text-xs rounded text-slate-200">English</button>
+            <button type="button" onclick="dismissAndSetLang('gu')" class="px-2.5 py-1 bg-slate-800 hover:bg-slate-700 text-xs rounded text-slate-200">ગુજરાતી</button>
+            <button type="button" onclick="dismissAndSetLang('hi')" class="px-2.5 py-1 bg-slate-800 hover:bg-slate-700 text-xs rounded text-slate-200">हिन्दी</button>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="pt-8 border-t border-slate-900 flex flex-col sm:flex-row items-center justify-between text-xs text-slate-500 gap-4">
+        <div>&copy; 2026 AAS Foundation Uttarsanda. All rights reserved.</div>
+        <div>Christian Street, Limda Chowk, Uttarsanda, Nadiad, Kheda, 387370</div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ==================== INTERACTIVE GALLERY & PROJECT MODAL ==================== -->
+  <div id="projectModal" class="hidden fixed inset-0 z-50 flex items-center justify-center bg-slate-950/80 backdrop-blur-sm p-4 overflow-y-auto">
+    <div class="bg-white rounded-3xl max-w-2xl w-full p-6 sm:p-8 relative shadow-2xl my-8">
+      
+      <!-- Close Button -->
+      <button type="button" onclick="closeModal()" class="absolute top-5 right-5 text-slate-400 hover:text-slate-800 text-xl font-bold bg-slate-100 hover:bg-slate-200 w-9 h-9 rounded-full flex items-center justify-center transition">
+        ✕
+      </button>
+
+      <!-- Header Info -->
+      <div class="mb-4 pr-10">
+        <h3 id="modalTitle" class="text-2xl font-bold text-slate-900 mb-1"></h3>
+        <div class="text-xs text-slate-500 flex flex-wrap gap-4">
+          <span id="modalDate" class="font-medium text-slate-700"></span>
+          <span id="modalLoc" class="font-medium text-orange-700"></span>
+        </div>
+      </div>
+
+      <!-- Main Slideshow Picture Container -->
+      <div id="slideshowBox" class="relative rounded-2xl overflow-hidden bg-slate-900 aspect-video mb-4 shadow-inner flex items-center justify-center">
+        <img id="mainModalImage" src="" alt="Project Gallery Photo" class="w-full h-full object-contain">
+        
+        <!-- Navigation Buttons -->
+        <button id="prevBtn" type="button" onclick="prevSlide()" class="absolute left-3 top-1/2 -translate-y-1/2 bg-black/60 hover:bg-black/90 text-white w-9 h-9 rounded-full flex items-center justify-center transition font-bold text-lg shadow-lg">
+          ❮
+        </button>
+        <button id="nextBtn" type="button" onclick="nextSlide()" class="absolute right-3 top-1/2 -translate-y-1/2 bg-black/60 hover:bg-black/90 text-white w-9 h-9 rounded-full flex items-center justify-center transition font-bold text-lg shadow-lg">
+          ❯
+        </button>
+
+        <!-- Current Slide Indicator -->
+        <div id="slideCounter" class="absolute bottom-3 right-3 bg-black/70 text-white text-[11px] font-mono px-2.5 py-1 rounded-full">
+          1 / 1
+        </div>
+      </div>
+
+      <!-- Thumbnail Preview Strip -->
+      <div id="thumbStrip" class="flex gap-2.5 overflow-x-auto pb-2 mb-4 scrollbar-thin">
+        <!-- Thumbnails inserted dynamically by JS -->
+      </div>
+
+      <p id="modalDesc" class="text-sm text-slate-600 leading-relaxed mb-6"></p>
+
+      <button type="button" onclick="closeModal()" class="w-full py-2.5 bg-slate-900 text-white font-medium rounded-xl text-xs hover:bg-slate-800 transition">
+        Close Project
+      </button>
+    </div>
+  </div>
+<!-- ==================== JAVASCRIPT ==================== -->
+  <script>
+    // 1. GLOBAL IMAGE ARRAYS
+    window.ekAasImages = [
+      'file_00000000876c8208b2be1d95358add03.png',
+      '0A9A1021.jpg',
+      '0A9A1217.jpg',
+      '0A9A1218.jpg',
+      'DSC_2016.jpg',
+
+    ];
+
+    window.rationKitImages = [
+      'C:\aas Foundation pics\IMG-20261014-WA0006.jpg',
+      '20231217_145157.jpg',
+      '20231217_145248.jpg',
+      '20231217_145455.jpg'
+    ];
+
+    window.remedialImages = [
+      'IMG-20261014-WA0007.jpg',
+      'IMG-20230710-WA0032.jpg',
+      'IMG-20230710-WA0033.jpg',
+      'IMG-20240811-WA0220.jpg',
+    ];
+
+    // 2. COMPLETE TRANSLATIONS DICTIONARY
+    window.translations = {
+      en: {
+        nav_home: "Home",
+        nav_about: "About",
+        nav_serve: "Whom We Serve",
+        nav_do: "What We Do",
+        nav_impact: "Impact",
+        nav_gallery: "Our Work",
+        nav_team: "Meet the Team",
+        nav_contact: "Contact",
+        nav_donate: "Donate",
+        hero_badge: "Non-Governmental Social Development Organisation",
+        hero_welcome: "We Welcome You — Together Bringing Hope, Dignity, and Education to Every Child and Family.",
+        hero_cta_work: "Explore Our Work",
+        hero_cta_donate: "Support a Student",
+        hero_photo_caption: '"Making education engaging, meaningful, and accessible for every child."',
+        motto_verse: '"Uplifting humanity through equal opportunities, compassion, and shared progress."',
+        motto_ref: "Collective Empathy • Inclusive Growth • Social Harmony",
+        about_tag: "About Us",
+        about_title: "The Journey of AAS Foundation Uttarsanda",
+        about_journey_p1: "For more than 15 years, our journey began as a quiet, close-knit initiative dedicated to providing monthly Ration Kits to widowed mothers and their families. Driven by a deep commitment to service, our Respected President envisioned creating an enduring institutional umbrella to amplify this vital work.",
+        about_journey_p2: "On July 6, 2023, AAS Foundation was formally registered. What started as humble grassroots relief has blossomed, through the steady dedication of dear friends, family, and compassionate well-wishers, into a mighty, ever-expanding banyan tree—nurturing countless lives every single day.",
+        about_vision_title: "Our Vision",
+        about_vision_desc: "To build an inclusive, equitable, and flourishing society where every individual enjoys equal opportunities for quality education, economic self-reliance, and dignity.",
+        about_mission_title: "Our Mission",
+        about_mission_desc: "Through strategic interventions in progressive education, economic enablement, holistic health, sustainable environmental practices, and social equality, we foster an inclusive society with equitable opportunities for all members of the human family.",
+        core_values_tag: "Our Guiding Pillars",
+        val_1_title: "Collaboration",
+        val_1_sub: "Partnering for collective strength",
+        val_2_title: "Integrity",
+        val_2_sub: "Accountable & transparent service",
+        val_3_title: "Empowerment",
+        val_3_sub: "Fostering lifelong self-reliance",
+        val_4_title: "Social Justice",
+        val_4_sub: "Equal dignity and access for all",
+        serve_tag: "Beneficiaries",
+        serve_title: "Whom We Serve",
+        serve_sub: "Focusing where genuine care and direct resources make an immediate, life-changing difference.",
+        serve_c1_title: "Financially Weaker But Cleaver Children",
+        serve_c1_desc: "cleaver children whose parents struggle to afford basic tuition fees, uniforms, and books, giving them equal footing in modern schooling.",
+        serve_c2_title: "Students Needing Academic Guidance",
+        serve_c2_desc: "Empowering children through dedicated remedial learning support to improve understanding and achieve strong academic marks.",
+        serve_c3_title: "Higher Education Aspirants",
+        serve_c3_desc: "Clever, academically capable students whose ambitions for college, degree courses, or diplomas are restricted purely by financial constraints.",
+        serve_c4_title: "Widows & Their Children",
+        serve_c4_desc: "Supplying vital grocery and nutrition Ration Kits to widowed mothers whose children are minor dependents or actively studying.",
+        do_tag: "Core Initiatives",
+        do_title: "What We Do",
+        do_badge_edu: "Educational Empowerment",
+        do_edu_h: "Making Learning Engaging, Fun & Accessible",
+        do_edu_li1: "Direct sponsorship of school admission and examination fees.",
+        do_edu_li2: "Remedial learning support producing noticeable marksheet improvements.",
+        do_edu_li3: "Merit scholarships for professional higher education studies.",
+        do_edu_li4: "Activity-based workshops to teach science and arts with joy.",
+        do_edu_footer: '"Change education in a fun way and change society."',
+        do_badge_fam: "Family & Nutrition Support",
+        do_fam_h: "Monthly Grocery & Ration Kits",
+        do_kit_items: "Kit Ingredients: Mug, Chana Dal, Toor Dal, Sugar, Chilli Powder, Turmeric Powder, and Pouch of Oil.",
+        do_fam_li1: "Essential staple food kit supporting kitchen nutrition directly.",
+        do_fam_li2: "Prioritized for single mothers and widows with minor or schooling children.",
+        do_fam_li3: "Regular doorstep delivery to safeguard family dignity.",
+        do_fam_li4: "Relieving kitchen distress so children can focus fully on studies.",
+        do_fam_footer: "Verified monthly distribution records maintained with zero leakage.",
+        impact_tag: "Verified Records",
+        impact_title: "Our Impact & Proof of Work",
+        impact_sub: "We maintain absolute transparency. Every single rupee and program is backed by ground documentation.",
+        stat_1: "Students Sponsored",
+        stat_2: "Widow Kits Distributing Successfully Every Month",
+        stat_3: "Remedial Learners Mentored",
+        impact_proof_h: "Ground Verification & Documentation",
+        proof_1_t: "Direct School Fee Receipts",
+        proof_1_d: "Tuition vouchers are paid directly to verified institutions via cheque or bank transfers with official school stamps.",
+        proof_2_t: "Ration Acknowledgment Slips",
+        proof_2_d: "Every grocery kit is logged with distribution signatures and photo proofs alongside date & area stamps.",
+        proof_3_t: "Academic Progress Cards",
+        proof_3_d: "We track semester progress report cards to document noticeable grade growth and ensure academic excellence.",
+        proof_verified: "Audited Logbooks",
+        gal_tag: "Field Activities",
+        gal_title: "Our Work & Project Reports",
+        gal_sub: "Explore individual project reports with on-ground details, dates, and photographic proof.",
+        proj_1_t: "EK AAS KAL KI AUR",
+        proj_1_d: "Our flagship scholarship distribution initiative held at the Community Hall providing direct educational sponsorship, uniforms, and textbooks to capable students.",
+        proj_2_t: "Ration Kit Distribution",
+        proj_2_d: "Monthly dry ration kit dispatch containing mug, chana dal, toor dal, sugar, chilli powder, turmeric powder, and oil pouch for widowed mothers.",
+        proj_3_t: "Remedial Education Programme",
+        proj_3_d: "Structured coaching conducted near Chaklasi Area that has produced noticeable, documented growth in children's marksheets.",
+        view_project: "View Project Details & Gallery",
+        team_tag: "Leadership",
+        team_title: "Meet the Team",
+        team_sub: "The dedicated individuals committed to integrity, transparency, and direct community service.",
+        team_m1_role: "Founder & President",
+        team_m1_bio: "Guiding visionary who laid the foundation for 15+ years of widow support and steered the establishment of AAS Foundation into an institutional reality.",
+        team_m2_role: "Programme Director",
+        team_m2_bio: "Leading on-ground educational programs, managing remedial classes, overseeing scholarship distributions, and driving community impact.",
+        team_contact: "Get in Touch",
+        donate_title: "Support Our Cause",
+        donate_sub: "Your contribution fuels school enrollments, books, and vital monthly groceries for families in need.",
+        bank_info_h: "Official Bank Account",
+        b_name: "Bank Name:",
+        b_acc_name: "Account Name:",
+        b_branch: "Branch:",
+        b_acc_no: "Account Number:",
+        b_ifsc: "IFSC Code:",
+        qr_title: "Scan UPI to Donate Directly",
+        con_tag: "Reach Out",
+        con_title: "Contact Us",
+        con_sub: "Have a student to refer, wish to partner, or want to verify an initiative? We are here to talk."
+      },
+      gu: {
+        nav_home: "મુખ્ય પૃષ્ઠ",
+        nav_about: "અમારા વિશે",
+        nav_serve: "કોની સેવા કરીએ છીએ",
+        nav_do: "અમારા કાર્યો",
+        nav_impact: "અમારી અસર",
+        nav_gallery: "અમારું કાર્ય / ગેલેરી",
+        nav_team: "અમારી ટીમ",
+        nav_contact: "સંપર્ક",
+        nav_donate: "દાન કરો",
+        hero_badge: "બિન-સરકારી સામાજિક સંસ્થા",
+        hero_welcome: "અમે આપનું સ્વાગત કરીએ છીએ — દરેક બાળક અને પરિવાર માટે આશા, ગૌરવ અને શિક્ષણ લાવવાનો સંકલ્પ.",
+        hero_cta_work: "અમારા કાર્યો જુઓ",
+        hero_cta_donate: "વિદ્યાર્થીને સહાય કરો",
+        hero_photo_caption: '"શિક્ષણને દરેક બાળક માટે આનંદપ્રદ, અર્થપૂર્ણ અને સુલભ બનાવવું."',
+        motto_verse: '"સમાન તકો, કરુણા અને સહિયારા વિકાસ દ્વારા માનવતાનું ઉત્થાન."',
+        motto_ref: "સામાજિક સંવાદિતા • સર્વસમાવેશક વિકાસ • પરસ્પર સહયોગ",
+        about_tag: "અમારા વિશે",
+        about_title: "આસ ફાઉન્ડેશન ઉત્તરસંડાની સફર",
+        about_journey_p1: "છેલ્લા ૧૫ વર્ષથી અમે એક નાના જૂથ તરીકે વિધવા માતાઓને માસિક રાશન કીટ પહોંચાડવાની મૂંગા મોઢે સેવા કરી રહ્યા હતા. આ સત્કાર્યને કાયમી અને વ્યાપક સ્વરૂપ આપવાના ઉમદા વિચાર સાથે અમારા આદરણીય પ્રમુખશ્રીએ એક સત્તાવાર ફાઉન્ડેશન શરૂ કરવાનો સંકલ્પ કર્યો.",
+        about_journey_p2: "તારીખ ૬ જુલાઈ, ૨૦૨૩ ના રોજ આસ ફાઉન્ડેશનની વિધિવત સ્થાપના કરવામાં આવી. સ્વજનો, મિત્રો અને શુભચિંતકોના સહકારથી શરૂ થયેલ આ સેવાકાર્ય આજે એક વિશાળ વટવૃક્ષ બનીને વિસ્તરી રહ્યું છે.",
+        about_vision_title: "અમારો દ્રષ્ટિકોણ",
+        about_vision_desc: "એક એવા સમાવેશી અને સમૃદ્ધ સમાજનું નિર્માણ કરવું, જ્યાં શિક્ષણ, આર્થિક સુખાકારી અને સમાનતાની સર્વોત્તમ તકો દરેક વ્યક્તિને સમાન રીતે મળે.",
+        about_mission_title: "અમારું મિશન",
+        about_mission_desc: "શિક્ષણ, આર્થિક ઉન્નતિ, આરોગ્ય, પર્યાવરણીય જાગૃતિ અને સમાનતા જેવા ક્ષેત્રોમાં સક્રિય પહેલ દ્વારા માનવજાતના પ્રત્યેક વર્ગ માટે સમૃદ્ધ અને ન્યાયપૂર્ણ સમાજનું નિર્માણ કરવું.",
+        core_values_tag: "અમારા મુખ્ય મૂલ્યો",
+        val_1_title: "સહયોગ",
+        val_1_sub: "સહિયારી શક્તિ અને એકતા",
+        val_2_title: "પ્રામાણિકતા",
+        val_2_sub: "પારદર્શક અને નિષ્ઠાવાન સેવા",
+        val_3_title: "સશક્તિકરણ",
+        val_3_sub: "આત્મનિર્ભરતાનું નિર્માણ",
+        val_4_title: "સામાજિક ન્યાય",
+        val_4_sub: "દરેક માટે સમાન હક અને ગૌરવ",
+        serve_tag: "લાભાર્થીઓ",
+        serve_title: "અમે કોની સેવા કરીએ છીએ",
+        serve_sub: "જ્યાં ખરી જરૂરિયાત છે ત્યાં સીધી અને પારદર્શક મદદ પહોંચાડવી.",
+        serve_c1_title: "આર્થિક રીતે નબળા પણ હોશિયાર બાળકો",
+        serve_c1_desc: "જે પરિવારો શાળાની ફી, ગણવેશ અને પુસ્તકોનો ખર્ચ ઉઠાવી શકતા નથી તેવા હોશિયાર બાળકોને મદદ કરવી.",
+        serve_c2_title: "શૈક્ષણિક માર્ગદર્શનની જરૂરિયાતવાળા બાળકો",
+        serve_c2_desc: "ખાસ રિમીડિયલ શિક્ષણ દ્વારા બાળકોની સમજણ વધારવી જેથી તેમના પરિણામમાં સુધારો થાય.",
+        serve_c3_title: "તેજસ્વી વિદ્યાર્થીઓ",
+        serve_c3_desc: "ભણવામાં હોંશિયાર હોય પરંતુ આર્થિક તંગીના કારણે કોલેજ કે ડિપ્લોમા કરી શકતા ન હોય તેવા યુવાનોને સહાય.",
+        serve_c4_title: "વિધવા માતાઓ અને બાળકો",
+        serve_c4_desc: "જેમના બાળકો સગીર છે અથવા ભણી રહ્યા છે તેવી વિધવા માતાઓને માસિક રાશન કીટ આપવી.",
+        do_tag: "મુખ્ય પહેલ",
+        do_title: "અમે શું કરીએ છીએ",
+        do_badge_edu: "શિક્ષણ સહાય",
+        do_edu_h: "શિક્ષણને રસપ્રદ અને ઉપયોગી બનાવવું",
+        do_edu_li1: "શાળાની પ્રવેશ અને પરીક્ષા ફીની સીધી ચુકવણી.",
+        do_edu_li2: "રેમેડિયલ શિક્ષણ દ્વારા બાળકના માર્કશીટમાં નોંધપાત્ર પ્રગતિ લાવવી.",
+        do_edu_li3: "ઉચ્ચ અભ્યાસ માટે મેરિટ સ્કોલરશિપ.",
+        do_edu_li4: "વિજ્ઞાન અને કળાને પ્રવૃત્તિઓ દ્વારા શીખવવું.",
+        do_edu_footer: '"શિક્ષણમાં આનંદ લાવો અને સમાજ બદલો."',
+        do_badge_fam: "પરિવાર સહાય",
+        do_fam_h: "માસિક કરિયાણા અને રાશન કીટ",
+        do_kit_items: "કીટ સામગ્રી: મગ, ચણા દાળ, તુવેર દાળ, ખાંડ, મરચું પાવડર, હળદર પાવડર અને તેલનું પાઉચ.",
+        do_fam_li1: "પરિવારના રસોડા માટે સીધી પૌષ્ટિક ખાદ્ય સહાય.",
+        do_fam_li2: "વિધવા માતાઓ અને આશ્રિત બાળકો ધરાવતા પરિવારોને પ્રાથમિકતા.",
+        do_fam_li3: "પરિવારના આત્મસન્માન સાથે ઘર સુધી રાશન પહોંચાડવું.",
+        do_fam_li4: "રસોઈની ચિંતા દૂર થવાથી બાળકો સંપૂર્ણ ધ્યાન ભણતરમાં લગાવી શકે.",
+        do_fam_footer: "દરેક કીટનું નોંધાયેલું અને ચકાસાયેલું વિતરણ.",
+        impact_tag: "સાચા પરિણામો",
+        impact_title: "અમારી અસર અને કામનો પુરાવો",
+        impact_sub: "સંપૂર્ણ પારદર્શિતા. દરેક રૂપિયા અને સેવા કાર્યનું લેખિત અને ફોટોગ્રાફિક રેકોર્ડ.",
+        stat_1: "વિદ્યાર્થીઓને સહાય સ્પોન્સરશિપ",
+        stat_2: "વિધવા રાશન કીટનું દર મહિને સફળ વિતરણ",
+        stat_3: "રિમીડિયલ શિક્ષણ મેળવતા વિદ્યાર્થીઓ",
+        impact_proof_h: "પ્રત્યક્ષ પુરાવા અને દસ્તાવેજો",
+        proof_1_t: "શાળા ફીની સત્તાવાર પહોંચ",
+        proof_1_d: "શિક્ષણ સંસ્થાઓને સીધા ચેક અથવા બેંક ટ્રાન્સફર દ્વારા ફી ચૂકવવામાં આવે છે.",
+        proof_2_t: "રાશન પહોંચ સ્લિપ",
+        proof_2_d: "રાશન વિતરણ વખતે લાભાર્થીના હસ્તાક્ષર અને તારીખ સાથે ફોટો રેકોર્ડ રખાય છે.",
+        proof_3_t: "પ્રગતિ પત્રક (રિપોર્ટ કાર્ડ)",
+        proof_3_d: "સહાય મેળવતા વિદ્યાર્થીઓના પરિણામ અને માર્કશીટમાં સુધારો નિયમિત ટ્રેક કરવામાં આવે છે.",
+        proof_verified: "ચકાસાયેલ રેકોર્ડ",
+        gal_tag: "ક્ષેત્ર કાર્ય",
+        gal_title: "અમારા કાર્યો અને પ્રોજેક્ટ રિપોર્ટ",
+        gal_sub: "તારીખ, સ્થળ અને ફોટોગ્રાફ્સ સાથે અમારા દરેક પ્રોજેક્ટની માહિતી જુઓ.",
+        proj_1_t: "એક આસ કલ કી ઓર",
+        proj_1_d: "કમ્યુનિટી હોલ ખાતે આયોજિત અમારો મુખ્ય સ્કોલરશિપ વિતરણ પ્રોજેક્ટ, જેના દ્વારા હોંશિયાર બાળકોને ફી અને પુસ્તકો આપવામાં આવ્યા.",
+        proj_2_t: "રાશન કીટ વિતરણ",
+        proj_2_d: "જરૂરિયાતમંદ વિધવા માતાઓને મગ, ચણા દાળ, તુવેર દાળ, ખાંડ, મરચું, હળદર અને તેલ સહિતની કીટ વિતરણ.",
+        proj_3_t: "રેમેડિયલ એજ્યુકેશન પ્રોગ્રામ",
+        proj_3_d: "ચકલાસી વિસ્તાર નજીક ચાલતો વિશેષ શિક્ષણ કાર્યક્રમ જેના પરિણામે બાળકોની માર્કશીટમાં નોંધપાત્ર સુધારો થયો છે.",
+        view_project: "પ્રોજેક્ટ વિગતો અને ગેલેરી જુઓ",
+        team_tag: "સંચાલન",
+        team_title: "અમારી ટીમને મળો",
+        team_sub: "પ્રામાણિકતા અને સમર્પણથી સમાજસેવા કરતા અમારા સાથીઓ.",
+        team_m1_role: "સ્થાપક અને પ્રમુખ",
+        team_m1_bio: "૧૫+ વર્ષથી સેવા આપનાર અને આસ ફાઉન્ડેશનનું સ્વપ્ન સાકાર કરનાર પ્રેરણાદાયી પ્રમુખશ્રી.",
+        team_m2_role: "પ્રોગ્રામ ડાયરેક્ટર",
+        team_m2_bio: "રેમેડિયલ શિક્ષણ, સ્કોલરશિપ વિતરણ અને ક્ષેત્રિય પ્રોજેક્ટ્સનું પ્રત્યક્ષ સંચાલન.",
+        team_contact: "સંપર્ક કરો",
+        donate_title: "દાન આપી સહભાગી બનો",
+        donate_sub: "આપનો નાનો સહયોગ કોઈ બાળકનું ભવિષ્ય અને પરિવારનું પોષણ સુનિશ્ચિત કરે છે.",
+        bank_info_h: "સત્તાવાર બેંક ખાતાની માહિતી",
+        b_name: "બેંકનું નામ:",
+        b_acc_name: "ખાતાનું નામ:",
+        b_branch: "શાખા:",
+        b_acc_no: "ખાતા નંબર:",
+        b_ifsc: "IFSC કોડ:",
+        qr_title: "UPI સ્કેન કરીને સીધું દાન કરો",
+        con_tag: "જોડાઓ",
+        con_title: "અમારો સંપર્ક કરો",
+        con_sub: "વિદ્યાર્થીની માહિતી આપવા અથવા અમારી સાથે જોડાવા સંપર્ક કરો."
+      },
+      hi: {
+        nav_home: "होम",
+        nav_about: "हमारे बारे में",
+        nav_serve: "किनकी सेवा करते हैं",
+        nav_do: "हम क्या करते हैं",
+        nav_impact: "हमारा प्रभाव",
+        nav_gallery: "हमारा कार्य",
+        nav_team: "हमारी टीम",
+        nav_contact: "संपर्क",
+        nav_donate: "दान करें",
+        hero_badge: "गैर-सरकारी सामाजिक विकास संगठन",
+        hero_welcome: "हम आपका स्वागत करते हैं — हर बच्चे और परिवार तक आशा, सम्मान और शिक्षा पहुंचाने का संकल्प।",
+        hero_cta_work: "हमारे कार्य देखें",
+        hero_cta_donate: "विद्यार्थी की मदद करें",
+        hero_photo_caption: '"शिक्षा को हर बच्चे के लिए रुचिकर, अर्थपूर्ण और सुलभ बनाना।"',
+        motto_verse: '"समान अवसर, संवेदना और साझा विकास से मानवता का उत्थान।"',
+        motto_ref: "सामाजिक सद्भाव • समावेशी विकास • पारस्परिक सहयोग",
+        about_tag: "हमारे बारे में",
+        about_title: "आस फाउंडेशन उत्तरसंडा की यात्रा",
+        about_journey_p1: "पिछले 15 वर्षों से हम एक छोटे समूह के रूप में विधवा माताओं को मासिक राशन किट वितरित करने की मौन सेवा कर रहे थे। इस सेवा कार्य को संस्थागत रूप देने के उद्देश्य से हमारे आदरणीय अध्यक्ष महोदय ने एक सुदृढ़ फाउंडेशन की नींव रखने का विचार किया।",
+        about_journey_p2: "6 जुलाई, 2023 को आस फाउंडेशन का विधिवत पंजीकरण हुआ। निकट मित्रों और परिवार के निरंतर सहयोग से यह पहल आज एक विशाल बरगद का रूप ले चुकी है जो दिन-प्रतिदिन पल्लवित हो रही है।",
+        about_vision_title: "हमारा दृष्टिकोण",
+        about_vision_desc: "एक समावेशी और समृद्ध समाज का निर्माण करना, जहां शिक्षा, आर्थिक सशक्तिकरण और समानता के समान अवसर प्रत्येक व्यक्ति को सुलभ हों।",
+        about_mission_title: "हमारा मिशन",
+        about_mission_desc: "शिक्षा, आर्थिक सुदृढ़ता, स्वास्थ्य, पर्यावरण संरक्षण और सामाजिक समानता की रणनीतिक पहलों के माध्यम से समग्र मानव जाति के लिए न्यायसंगत अवसरों को सुनिश्चित करना।",
+        core_values_tag: "हमारे मार्गदर्शक मूल्य",
+        val_1_title: "सहयोग",
+        val_1_sub: "साझा शक्ति और सामूहिकता",
+        val_2_title: "सत्यनिष्ठा",
+        val_2_sub: "पारदर्शी व जवाबदेह कार्यशैली",
+        val_3_title: "सशक्तिकरण",
+        val_3_sub: "आत्मनिर्भरता का निर्माण",
+        val_4_title: "सामाजिक न्याय",
+        val_4_sub: "सभी के लिए समान अधिकार व सम्मान",
+        serve_tag: "लाभार्थी",
+        serve_title: "हम किनकी सेवा करते हैं",
+        serve_sub: "जहां सबसे अधिक आवश्यकता है, वहां प्रत्यक्ष और पारदर्शी सहायता पहुंचाना।",
+        serve_c1_title: "आर्थिक रूप से कमजोर पर होशियार बच्चे",
+        serve_c1_desc: "वे होशियार बच्चे जिनके माता-पिता स्कूल फीस, वर्दी और किताबों का खर्च उठाने में असमर्थ हैं।",
+        serve_c2_title: "शैक्षणिक मार्गदर्शन के आकांक्षी बच्चे",
+        serve_c2_desc: "विशेष रिमेडियल कक्षाओं के माध्यम से बच्चों को सशक्त बनाना ताकि उनकी समझ बढ़े और परीक्षा में अच्छे अंक आएं।",
+        serve_c3_title: "उच्च शिक्षा के आकांक्षी छात्र",
+        serve_c3_desc: "मेधावी छात्र जिनकी कॉलेज या डिग्री की पढ़ाई केवल आर्थिक तंगी के कारण रुक जाती है।",
+        serve_c4_title: "विधवा माताएं और उनके बच्चे",
+        serve_c4_desc: "जिनके बच्चे नाबालिग हैं या पढ़ाई कर रहे हैं, ऐसी माताओं को मासिक राशन किट प्रदान करना।",
+        do_tag: "प्रमुख पहल",
+        do_title: "हम क्या करते हैं",
+        do_badge_edu: "शैक्षणिक सशक्तिकरण",
+        do_edu_h: "सीखने को मजेदार, सार्थक और सुलभ बनाना",
+        do_edu_li1: "स्कूल प्रवेश और परीक्षा शुल्क का सीधा भुगतान।",
+        do_edu_li2: "रिमेडियल कक्षाओं से बच्चों की मार्कशीट में उल्लेखनीय सुधार लाना।",
+        do_edu_li3: "उच्च शिक्षा के लिए मेरिट स्कॉलरशिप।",
+        do_edu_li4: "गतिविधि-आधारित कार्यशालाओं से विज्ञान व गणित सिखाना।",
+        do_edu_footer: '"शिक्षा को आनंददायक बनाएं और समाज में बदलाव लाएं।"',
+        do_badge_fam: "पारिवारिक पोषण सहायता",
+        do_fam_h: "मासिक किराना एवं राशन किट",
+        do_kit_items: "किट सामग्री: मूंग, चना दाल, तुअर दाल, चीनी, मिर्च पाउडर, हल्दी पाउडर और तेल का पाउच।",
+        do_fam_li1: "रसोई के लिए पौष्टिक आवश्यक खाद्य सामग्री किट।",
+        do_fam_li2: "एकल माताओं और विधवाओं को प्राथमिकता जिनके बच्चे अध्ययनरत हैं।",
+        do_fam_li3: "ससम्मान घर तक राशन पहुंचाना ताकि परिवार की गरिमा बनी रहे।",
+        do_fam_li4: "रसोई की चिंता दूर करना ताकि बच्चे पूरी तरह पढ़ाई पर ध्यान केंद्रित कर सकें।",
+        do_fam_footer: "बिना किसी गड़बड़ी के पूर्णतः सत्यापित वितरण रिकॉर्ड।",
+        impact_tag: "सत्यापित परिणाम",
+        impact_title: "हमारा प्रभाव और कार्य के प्रमाण",
+        impact_sub: "हम पूरी पारदर्शिता रखते हैं। हर सहयोग और सेवा कार्य का ऑन-ग्राउंड रिकॉर्ड मौजूद है।",
+        stat_1: "विद्यार्थियों को छात्रवृत्ति",
+        stat_2: "विधवा राशन किट का हर महीने सफल वितरण",
+        stat_3: "रिमेडियल कक्षाओं के लाभार्थी छात्र",
+        impact_proof_h: "जमीनी सत्यापन और दस्तावेज",
+        proof_1_t: "स्कूल फीस की आधिकारिक रसीदें",
+        proof_1_d: "स्कूलों को सीधी फीस चेक या बैंक ट्रांसफर द्वारा दी जाती है जिसपर संस्था की मुहर होती है।",
+        proof_2_t: "राशन प्राप्ति पर्ची",
+        proof_2_d: "प्रत्येक राशन किट वितरण पर लाभार्थी के हस्ताक्षर और दिनांकित फोटो रिकॉर्ड रखा जाता है।",
+        proof_3_t: "प्रगति रिपोर्ट कार्ड",
+        proof_3_d: "छात्रों की परीक्षा रिपोर्ट और मार्कशीट में हुए उल्लेखनीय सुधार की नियमित निगरानी की जाती है।",
+        proof_verified: "सत्यापित रिकॉर्ड",
+        gal_tag: "क्षेत्रीय गतिविधियां",
+        gal_title: "हमारा कार्य और प्रोजेक्ट रिपोर्ट",
+        gal_sub: "दिनांक, स्थान और तस्वीरों के साथ प्रत्येक प्रमुख कार्य की विस्तृत रिपोर्ट देखें।",
+        proj_1_t: "एक आस कल की ओर",
+        proj_1_d: "कम्युनिटी हॉल में आयोजित हमारा प्रमुख स्कॉलरशिप वितरण अभियान, जिसके तहत बच्चों को फीस और पाठ्यपुस्तकें दी गईं।",
+        proj_2_t: "राशन किट वितरण",
+        proj_2_d: "जरूरतमंद विधवा माताओं के परिवारों को मूंग, चना दाल, तुअर दाल, चीनी, मिर्च पाउडर, हल्दी पाउडर और तेल पाउच किट का वितरण।",
+        proj_3_t: "रिमेडियल एजुकेशन प्रोग्राम",
+        proj_3_d: "चकलासी क्षेत्र के समीप संचालित विशेष अतिरिक्त कोचिंग, जिससे बच्चों की मार्कशीट में उल्लेखनीय सुधार दर्ज किया गया।",
+        view_project: "प्रोजेक्ट विवरण और गैलरी देखें",
+        team_tag: "नेतृत्व",
+        team_title: "हमारी टीम से मिलें",
+        team_sub: "निष्ठा, पारदर्शिता और सेवाभाव से समाज निर्माण में कार्यरत साथी।",
+        team_m1_role: "संस्थापक एवं अध्यक्ष",
+        team_m1_bio: "15+ वर्षों से विधवा सहायता की अलख जगाने वाले एवं आस फाउंडेशन को संस्थागत रूप देने वाले मार्गदर्शक अध्यक्ष।",
+        team_m2_role: "प्रोग्राम डायरेक्टर",
+        team_m2_bio: "रिमेडियल शिक्षा, स्कॉलरशिप वितरण और क्षेत्रीय सेवा परियोजनाओं का ऑन-ग्राउंड संचालन।",
+        team_contact: "संपर्क करें",
+        donate_title: "सहयोग करें और बदलाव लाएं",
+        donate_sub: "आपका सहयोग किसी बच्चे के स्कूल जाने और परिवार के सम्मानपूर्वक जीने का आधार बनता है।",
+        bank_info_h: "आधिकारिक बैंक खाता विवरण",
+        b_name: "बैंक का नाम:",
+        b_acc_name: "खाता धारक का नाम:",
+        b_branch: "शाखा:",
+        b_acc_no: "खाता संख्या:",
+        b_ifsc: "IFSC कोड:",
+        qr_title: "UPI स्कैन कर सीधे दान करें",
+        con_tag: "जुड़ें",
+        con_title: "संपर्क करें",
+        con_sub: "किसी जरूरतमंद छात्र की जानकारी देने या सहयोग करने के लिए संपर्क करें।"
+      }
+    };
+
+    // 3. FAIL-PROOF LANGUAGE SWITCHER
+    window.dismissAndSetLang = function(lang) {
+      // Hide modal
+      var modal = document.getElementById('languageModal');
+      if (modal) {
+        modal.style.setProperty('display', 'none', 'important');
+      }
+
+      // Sync selector dropdown
+      var sel = document.getElementById('langSelect');
+      if (sel) {
+        sel.value = lang;
+      }
+
+      // Translate all data-i18n items
+      var dict = window.translations[lang] || window.translations['en'];
+      var elements = document.querySelectorAll('[data-i18n]');
+      elements.forEach(function(el) {
+        var key = el.getAttribute('data-i18n');
+        if (dict && dict[key]) {
+          el.innerText = dict[key];
+        }
+      });
+
+      // Save preference safely
+      try {
+        localStorage.setItem('aas_lang', lang);
+      } catch (e) {}
+    };
+
+    // Auto-check stored language on page load
+    (function checkInitialLang() {
+      try {
+        var saved = localStorage.getItem('aas_lang');
+        if (saved && (saved === 'en' || saved === 'gu' || saved === 'hi')) {
+          var modal = document.getElementById('languageModal');
+          if (modal) modal.style.setProperty('display', 'none', 'important');
+          window.dismissAndSetLang(saved);
+        }
+      } catch (e) {}
+    })();
+
+    // 4. ROBUST GALLERY AND MODAL ENGINE
+    window.currentGalleryImages = [];
+    window.currentSlideIndex = 0;
+
+    window.openModal = function(title, date, loc, desc, images) {
+      var modal = document.getElementById('projectModal');
+      if (!modal) return;
+
+      document.getElementById('modalTitle').innerText = title;
+      document.getElementById('modalDate').innerText = '📅 ' + date;
+      document.getElementById('modalLoc').innerText = '📍 ' + loc;
+      document.getElementById('modalDesc').innerText = desc;
+
+      // Unpack images dynamically
+      if (typeof images === 'string') {
+        if (window[images]) {
+          window.currentGalleryImages = window[images];
+        } else {
+          try {
+            window.currentGalleryImages = JSON.parse(images);
+          } catch (e) {
+            window.currentGalleryImages = [images];
+          }
+        }
+      } else if (Array.isArray(images)) {
+        window.currentGalleryImages = images;
+      } else {
+        window.currentGalleryImages = [];
+      }
+
+      window.currentSlideIndex = 0;
+
+      var slideshowBox = document.getElementById('slideshowBox');
+      var thumbContainer = document.getElementById('thumbStrip');
+      thumbContainer.innerHTML = '';
+
+      if (window.currentGalleryImages && window.currentGalleryImages.length > 0) {
+        slideshowBox.style.display = 'flex';
+
+        var showArrows = window.currentGalleryImages.length > 1;
+        document.getElementById('prevBtn').style.display = showArrows ? 'flex' : 'none';
+        document.getElementById('nextBtn').style.display = showArrows ? 'flex' : 'none';
+
+        window.currentGalleryImages.forEach(function(src, idx) {
+          var thumb = document.createElement('img');
+          thumb.src = src;
+          thumb.alt = 'Thumb ' + (idx + 1);
+          thumb.className = 'w-16 h-12 rounded-lg object-cover cursor-pointer border-2 transition ' +
+            (idx === 0 ? 'border-orange-500 scale-105' : 'border-transparent opacity-60 hover:opacity-100');
+          thumb.onclick = function() {
+            window.goToSlide(idx);
+          };
+          thumbContainer.appendChild(thumb);
+        });
+
+        window.updateSlideView();
+      } else {
+        slideshowBox.style.display = 'none';
+      }
+
+      // Reveal modal directly
+      modal.classList.remove('hidden');
+      modal.style.display = 'flex';
+    };
+
+    window.updateSlideView = function() {
+      if (!window.currentGalleryImages || !window.currentGalleryImages.length) return;
+      var activePath = window.currentGalleryImages[window.currentSlideIndex];
+
+      var mainImg = document.getElementById('mainModalImage');
+      mainImg.src = activePath;
+
+      document.getElementById('slideCounter').innerText = (window.currentSlideIndex + 1) + ' / ' + window.currentGalleryImages.length;
+
+      var thumbs = document.getElementById('thumbStrip').querySelectorAll('img');
+      thumbs.forEach(function(img, idx) {
+        if (idx === window.currentSlideIndex) {
+          img.className = 'w-16 h-12 rounded-lg object-cover cursor-pointer border-2 border-orange-500 scale-105 transition';
+        } else {
+          img.className = 'w-16 h-12 rounded-lg object-cover cursor-pointer border-2 border-transparent opacity-60 hover:opacity-100 transition';
+        }
+      });
+    };
+
+    window.nextSlide = function() {
+      if (!window.currentGalleryImages.length) return;
+      window.currentSlideIndex = (window.currentSlideIndex + 1) % window.currentGalleryImages.length;
+      window.updateSlideView();
+    };
+
+    window.prevSlide = function() {
+      if (!window.currentGalleryImages.length) return;
+      window.currentSlideIndex = (window.currentSlideIndex - 1 + window.currentGalleryImages.length) % window.currentGalleryImages.length;
+      window.updateSlideView();
+    };
+
+    window.goToSlide = function(index) {
+      window.currentSlideIndex = index;
+      window.updateSlideView();
+    };
+
+    window.closeModal = function() {
+      var modal = document.getElementById('projectModal');
+      if (modal) {
+        modal.classList.add('hidden');
+        modal.style.display = 'none';
+      }
+    };
+
+    // Keyboard navigation (Left, Right, Escape)
+    window.addEventListener('keydown', function(e) {
+      var modal = document.getElementById('projectModal');
+      if (modal && modal.style.display === 'flex') {
+        if (e.key === 'ArrowRight') window.nextSlide();
+        if (e.key === 'ArrowLeft') window.prevSlide();
+        if (e.key === 'Escape') window.closeModal();
+      }
+    });
+
+    // 5. MOBILE DRAWER MENU
+    window.toggleMobileMenu = function() {
+      var menu = document.getElementById('mobileMenu');
+      if (menu) {
+        menu.classList.toggle('hidden');
+      }
+    };
+
+    // 6. SAFE ICON INITIALIZATION
+    try {
+      if (window.lucide) {
+        lucide.createIcons();
+      }
+    } catch (err) {
+      console.warn("Lucide icons:", err);
+    }
+
+    // 7. CONTACT FORM DIRECT TO WHATSAPP
+    window.handleContactSubmit = function(e) {
+      e.preventDefault();
+      var name = document.getElementById('contactName').value;
+      var phone = document.getElementById('contactPhone').value;
+      var msg = document.getElementById('contactMessage').value;
+      var text = "*Inquiry via AAS Foundation Website*\n*Name:* " + name + "\n*Phone:* " + phone + "\n*Message:* " + msg;
+      window.open("https://wa.me/919039584421?text=" + encodeURIComponent(text), '_blank');
+      e.target.reset();
+    };
+  </script>
+  </body>
+</html>
